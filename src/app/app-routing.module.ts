@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AdminComponent } from './admin/admin.component';
 import {HomeComponent} from './pages/home/home.component';
 
 const PAGES_COMPONENTS = [
-  AdminComponent,
   HomeComponent
 ];
 
@@ -42,7 +40,8 @@ const routes: Routes = [
   // },
      { 
         path: 'admin',
-        component:  AdminComponent
+        //component:  AdminComponent
+        loadChildren:'./admin/admin.module#AdminModule'
      },
      {
        path: '',

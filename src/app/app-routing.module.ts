@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {HomeComponent} from './pages/home/home.component';
+//import {HomeComponent} from './pages/home/home.component';
 
 const PAGES_COMPONENTS = [
-  HomeComponent
+  //HomeComponent
 ];
 
 const routes: Routes = [
@@ -44,10 +44,11 @@ const routes: Routes = [
         loadChildren:'./admin/admin.module#AdminModule'
      },
      {
-       path: '',
-       component: HomeComponent
-     }
-  // { path: '', redirectTo: 'pages', pathMatch: 'full' },
+       path: 'home',
+       //component: HomeComponent
+       loadChildren:'./pages/pages.module#PagesModule'
+     },
+   { path: '', redirectTo: 'home', pathMatch: 'full' },
   // { path: '**', redirectTo: 'pages' },
 ];
 

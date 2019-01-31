@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AdminComponent } from './pages/admin/admin.component';
+import { AdminComponent } from './admin/admin.component';
+import {HomeComponent} from './pages/home/home.component';
 
 const PAGES_COMPONENTS = [
-  AdminComponent
+  AdminComponent,
+  HomeComponent
 ];
 
 const routes: Routes = [
@@ -42,6 +44,10 @@ const routes: Routes = [
         path: 'admin',
         component:  AdminComponent
      },
+     {
+       path: '',
+       component: HomeComponent
+     }
   // { path: '', redirectTo: 'pages', pathMatch: 'full' },
   // { path: '**', redirectTo: 'pages' },
 ];

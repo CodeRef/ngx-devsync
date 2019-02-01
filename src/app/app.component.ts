@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-
+import { setTheme } from 'ngx-bootstrap/utils';
 @Component({
   selector: 'app-root',
-  //templateUrl: './app.component.html',
-  template:'<router-outlet></router-outlet>'
-  //styleUrls: ['./app.component.css']
+  template: '<router-outlet></router-outlet>'
 })
 export class AppComponent {
   title = 'dev-sync';
+  constructor() {
+    setTheme('bs4');
+  }
 }

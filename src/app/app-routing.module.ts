@@ -11,11 +11,9 @@ const routes: Routes = [
     loadChildren: './admin/admin.module#AdminModule'
   },
   {
-    path: 'home',
+    path: '',
     loadChildren: './pages/pages.module#PagesModule'
-  },
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: '**', redirectTo: 'home' },
+  }
 ];
 
 @NgModule({

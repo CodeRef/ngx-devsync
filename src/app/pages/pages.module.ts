@@ -1,23 +1,18 @@
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
 
-import { PagesRoutingModule } from './pages-routing.module';
+import {PagesRoutingModule} from './pages-routing.module';
 
-import { PagesComponent } from './pages.component';
-import { HomeComponent } from './home/home.component';
-// import {
-//     ThemeModule
-// } from './@theme/theme.module';
-import {LandingComponent} from './@theme/layouts/landing/landing.component';
+import {PagesComponent} from './pages.component';
+// import {ThemeModule } from './@theme/theme.module';
+const COMPONENTS = [
+    PagesComponent
+];
 
 @NgModule({
     imports: [
         PagesRoutingModule,
-       // ThemeModule.forRoot()
+        // ThemeModule.forRoot()
     ],
-    declarations: [
-        PagesComponent,
-        HomeComponent,
-        LandingComponent
-    ]
+    declarations: [...COMPONENTS]
 })
-export class PagesModule { }
+export class PagesModule {}

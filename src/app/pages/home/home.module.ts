@@ -4,6 +4,15 @@ import {HomeComponent, AboutComponent, BlogComponent, ContactComponent, TeamComp
 import {HomeRoutingModule} from './home-routing.module';
 
 import {LandingComponent, OneColumnComponent} from '../@theme/layouts';
+
+import {
+    HeaderComponent,
+    NavComponent,
+    MainComponent,
+    FooterComponent
+} from '../@theme/components';
+
+
 const COMPONENTS = [
     LandingComponent,
     OneColumnComponent,
@@ -11,7 +20,11 @@ const COMPONENTS = [
     AboutComponent,
     BlogComponent,
     ContactComponent,
-    TeamComponent
+    TeamComponent,
+    HeaderComponent,
+    NavComponent,
+    MainComponent,
+    FooterComponent
 ];
 @NgModule({
     imports: [HomeRoutingModule],

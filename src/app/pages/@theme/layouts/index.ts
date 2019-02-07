@@ -1,4 +1,4 @@
-export * from './landing/landing.component';
+export * from './full-page/full-page.component';
 export * from './one-column/one-column.component';
 export * from './two-columns/two-columns.component';
 export * from './three-columns/three-columns.component';

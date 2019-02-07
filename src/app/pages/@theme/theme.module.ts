@@ -1,5 +1,4 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
 import {
     HeaderComponent,
     NavComponent,
@@ -8,7 +7,7 @@ import {
 } from './components';
 
 import {
-    LandingComponent,
+    FullPageComponent,
     OneColumnComponent,
     TwoColumnsComponent,
     ThreeColumnsComponent
@@ -19,7 +18,7 @@ const COMPONENTS = [
     NavComponent,
     MainComponent,
     FooterComponent,
-    LandingComponent,
+    FullPageComponent,
     OneColumnComponent,
     TwoColumnsComponent,
     ThreeColumnsComponent

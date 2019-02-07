@@ -2,18 +2,20 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import {
-    LandingComponent,
+    FullPageComponent,
     OneColumnComponent
 } from '../@theme/layouts';
 import {
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    LoginComponent,
+    RegisterComponent
 } from './';
 
 const routes: Routes = [
     {
         path: '',
-        component: LandingComponent,
+        component: FullPageComponent,
         children: [
             {
                 path: '',
@@ -21,6 +23,25 @@ const routes: Routes = [
             }
         ]
     }, {
+        path: 'login',
+        component: FullPageComponent,
+        children: [{
+            path: '',
+            component: LoginComponent
+        }
+        ]
+    },
+    {
+        path: 'register',
+        component: FullPageComponent,
+        children: [
+            {
+                path: '',
+                component: RegisterComponent
+            }
+        ]
+    },
+    {
         path: 'about',
         component: OneColumnComponent,
         children: [

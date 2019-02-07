@@ -1,9 +1,10 @@
 import {NgModule} from '@angular/core';
 
-import {HomeComponent, AboutComponent, BlogComponent, ContactComponent, TeamComponent} from './';
+import {HomeComponent, AboutComponent, BlogComponent, ContactComponent, TeamComponent,LoginComponent,
+    RegisterComponent} from './';
 import {HomeRoutingModule} from './home-routing.module';
 
-import {LandingComponent, OneColumnComponent} from '../@theme/layouts';
+import {FullPageComponent, OneColumnComponent} from '../@theme/layouts';
 
 import {
     HeaderComponent,
@@ -14,7 +15,7 @@ import {
 
 
 const COMPONENTS = [
-    LandingComponent,
+    FullPageComponent,
     OneColumnComponent,
     HomeComponent,
     AboutComponent,
@@ -24,7 +25,9 @@ const COMPONENTS = [
     HeaderComponent,
     NavComponent,
     MainComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    RegisterComponent
 ];
 @NgModule({
     imports: [HomeRoutingModule],
